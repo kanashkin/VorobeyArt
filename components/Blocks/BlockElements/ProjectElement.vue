@@ -64,6 +64,7 @@ defineExpose({ project });
 	&__link::after {
 		content: "";
 		position: absolute;
+		z-index: 2;
 		inset: 0;
 		width: 100%;
 		height: 100%;
