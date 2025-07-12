@@ -165,7 +165,9 @@ export default {
     min-height: 100dvh;
     height: 100dvh;
     max-height: 100dvh;
-    position: relative;
+    position: absolute;
+	inset: 0;
+	width: 100vw;
     overflow: hidden;
 
     &__container {
@@ -282,6 +284,10 @@ export default {
             padding: 0;
             padding-top: 140px;
         }
+
+		&__title {
+			font-size: 25px;
+		}
     }
 }
 

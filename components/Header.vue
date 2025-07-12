@@ -1,7 +1,7 @@
 <template>
-  <!-- <div
+  <div
     :class="`header-placeholder ${disableHeaderPlaceholder ? '' : 'header-placeholder--home'}`"
-  ></div> -->
+  ></div>
   <!-- <div
 		class="header-glass"
 		:class="{
