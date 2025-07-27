@@ -1,11 +1,7 @@
-import { defineRobotRules } from "@nuxt/robots";
-
-export default defineRobotRules([
-  {
-    userAgent: "*",
-    allow: "/",
-    disallow: ["/404/"],
-  },
-]);
-
-export const sitemap = "https://vorobeyart.ru/sitemap.xml";
+export default [
+  { UserAgent: "*" },
+  { Allow: "/" },
+  { Disallow: "/404/" },
+  { BlankLine: true },
+  { Sitemap: "https://vorobeyart.ru/sitemap.xml" },
+];
