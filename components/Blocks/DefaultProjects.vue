@@ -116,7 +116,7 @@ onUnmounted(() => {
 			/>
 			</div>
 		</div>
-		<NuxtLink class="projects__more" to="/works">
+		<NuxtLink class="projects__more" to="/case-in-dev">
 			Все проекты
 			<svg
 			width="51"

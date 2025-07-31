@@ -154,28 +154,32 @@
     </div>
 </template>
 
-<script>
-window.addEventListener('DOMContentLoaded', () => {
-	document.body.classList.add('screen-body')
-})
 
-export default {
-  name: "DevPage",
-};
+<script setup>
+import { onMounted, onUnmounted } from 'vue';
+
+onMounted(() => {
+  document.body.classList.add('screen-body');
+});
+
+onUnmounted(() => {
+  document.body.classList.remove('screen-body');
+});
 </script>
+
 
 <style lang="scss">
 .screen-body {
-	min-height: 100vh;
-    height: 100vh;
-    max-height: 100vh;
+	min-height: 100dvh;
+    height: 100dvh;
+    max-height: 100dvh;
 	overflow: hidden;
 }
 
 .dev {
-    min-height: 100vh;
-    height: 100vh;
-    max-height: 100vh;
+    min-height: 100dvh;
+    height: 100dvh;
+    max-height: 100dvh;
     position: absolute;
 	inset: 0;
 	width: 100vw;
