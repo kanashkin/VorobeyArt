@@ -155,16 +155,27 @@
 </template>
 
 <script>
+window.addEventListener('DOMContentLoaded', () => {
+	document.body.classList.add('screen-body')
+})
+
 export default {
   name: "DevPage",
 };
 </script>
 
 <style lang="scss">
+.screen-body {
+	min-height: 100vh;
+    height: 100vh;
+    max-height: 100vh;
+	overflow: hidden;
+}
+
 .dev {
-    min-height: 100dvh;
-    height: 100dvh;
-    max-height: 100dvh;
+    min-height: 100vh;
+    height: 100vh;
+    max-height: 100vh;
     position: absolute;
 	inset: 0;
 	width: 100vw;
@@ -275,7 +286,7 @@ export default {
                 transform: translateX(-50%);
 				width: 100%;
 				max-width: 526px;
-				max-height: 55vh;
+				max-height: 60vh;
 				object-fit: contain;
             }
         }

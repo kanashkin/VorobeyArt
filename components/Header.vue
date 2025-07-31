@@ -111,7 +111,7 @@
         <NuxtLink to="services" class="nav__link" @click="clickHandle">
           <sup>/02</sup> {{ $t("header.services") }}
         </NuxtLink>
-        <NuxtLink to="works" class="nav__link" @click="clickHandle">
+        <NuxtLink to="/case-in-dev" class="nav__link" @click="clickHandle">
           <sup>/03</sup> {{ $t("header.works") }}
         </NuxtLink>
         <NuxtLink to="contacts" class="nav__link" @click="clickHandle">
