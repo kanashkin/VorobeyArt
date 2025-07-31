@@ -48,7 +48,6 @@ onMounted(() => {
 			0.1,
 			10,
 		);
-		camera.position.set(0, 0, 1.0);
 
 		const light = new THREE.DirectionalLight("#88aaff", 100);
 		light.position.set(5.25, 3, 2.25);
@@ -59,10 +58,17 @@ onMounted(() => {
 		scene.add(light2);
 
 		gltf = model.gltf;
-		gltf.scene.scale.set(1.2, 1.2, 1.2);
 		gltf.scene.rotation.set(Math.PI, 0, Math.PI * 0.3);
 		gltf.scene.position.set(0, 0, 0.3);
 		scene.add(gltf.scene);
+
+		if (window.innerWidth <= 767) {
+			gltf.scene.scale.set(1.1, 1.1, 1.1);
+			camera.position.set(0, 0, 1.3);
+		} else {
+			gltf.scene.scale.set(1.2, 1.2, 1.2);
+			camera.position.set(0, 0, 1.0);
+		}
 
 		scene.traverse((object) => {
 			if (object instanceof THREE.Mesh) {

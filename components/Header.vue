@@ -59,7 +59,7 @@
         <NuxtLink to="services" class="nav-row__link">
           {{ $t("header.services") }}
         </NuxtLink>
-        <NuxtLink to="works" class="nav-row__link">
+        <NuxtLink to="/case-in-dev" class="nav-row__link">
           {{ $t("header.works") }}
         </NuxtLink>
         <NuxtLink to="contacts" class="nav-row__link">

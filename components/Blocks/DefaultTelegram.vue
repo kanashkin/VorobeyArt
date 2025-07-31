@@ -329,6 +329,7 @@
 
 	.telegram-link {
 		margin-top: 542px;
+		border-radius: 15px;
 
 		&__logo {
 			width: 96px;
@@ -372,6 +373,8 @@
 
 		&__container {
 			padding: 0 30px 58px 30px;
+			display: flex;
+			flex-direction: column;
 		}
 
 		&__title {
@@ -390,7 +393,8 @@
 	}
 
 	.telegram-link {
-		margin-top: 294px;
+		margin: 294px auto 0 auto;
+		border-radius: 12px;
 
 		&__logo {
 			width: 66px;
@@ -415,7 +419,7 @@
 
 @media(max-width: 424px) {
 	.telegram-link {
-		margin-top: 226px;
+		margin: 226px auto 0 auto;
 		gap: 22px;
 		padding: 15px 20px;
 

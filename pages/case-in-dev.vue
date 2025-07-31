@@ -271,8 +271,12 @@ export default {
             &--mobile {
                 display: block;
                 bottom: -18px;
-                left: 47%;
+                left: 50%;
                 transform: translateX(-50%);
+				width: 100%;
+				max-width: 526px;
+				max-height: 55vh;
+				object-fit: contain;
             }
         }
     }
@@ -288,14 +292,6 @@ export default {
 		&__title {
 			font-size: 25px;
 		}
-    }
-}
-
-@media(max-width: 424px) {
-    .dev {
-        &__image--mobile {
-            width: 526px;
-        }
     }
 }
 </style>
